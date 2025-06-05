@@ -3,15 +3,48 @@
 {% block title %}Home - Bert's Site{% endblock %}
 
 {% block content %}
+    <!-- Hero Section -->
     <div class="text-center py-5 bg-light rounded shadow-sm">
         <h1 class="display-4 mb-3">Hey, I'm Bert 👋</h1>
         <p class="lead mb-4">I'm learning Python, Flask, and building smart things with AI.</p>
         <a href="/about" class="btn btn-primary btn-lg">Learn More About Me</a>
     </div>
 
-    <div class="mt-5 text-center">
-        <h2>📂 Featured Projects</h2>
-        <p class="text-muted">Coming soon: AI assistants, fun games, and more Python goodness.</p>
-        <!-- You can add cards here later! -->
+    <!-- Projects Section -->
+    <div class="mt-5">
+        <h2 class="text-center mb-4">📂 Projects I'm Working On</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Assistant</h5>
+                        <p class="card-text">A Flask-powered chatbot I'm building to answer questions like ChatGPT.</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Number Guessing Game</h5>
+                        <p class="card-text">My first Python game — it picks a number and you try to guess it!</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator App</h5>
+                        <p class="card-text">A simple web calculator to practice Flask routes and user input.</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 {% endblock %}
